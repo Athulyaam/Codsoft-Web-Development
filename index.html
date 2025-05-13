@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athulya's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Athulya A.M. - Developer</h1>
+        <p>Passionate AIML Student | Crafting Intelligent Solutions</p>
+    </header>
+
+    <section id="about" class="animate">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>I am a driven AIML student with hands-on experience in artificial intelligence, web development, and design. My expertise spans developing advanced machine learning models, creating responsive and user-friendly web interfaces, and innovating solutions that address real-world challenges. I am passionate about blending technical precision with creative problem-solving to contribute meaningfully to the tech industry.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="animate">
+        <h2>Skills</h2>
+        <ul>
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+            <li>Web Development</li>
+            <li>Frontend Design</li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="animate">
+        <h2>Achievements</h2>
+        <div class="achievement-container">
+            <div class="achievement-box zigzag">
+                <h3>freecodecamp</h3>
+                <p>Completed 300 hours of responsive web design, including projects like survey form, tribute page, technical documentation page, product landing page, and personal portfolio webpage.</p>
+            </div>
+            <div class="achievement-box zigzag">
+                <h3>litlogix</h3>
+                <p>I've secured 2nd place in a rigorous test of presentation skills at the event Fiestaa.</p>
+            </div>
+        
+        <div class="achievement-container">
+        
+            <div class="achievement-box zigzag">
+                <h3>Codsoft Artificial Intelligence</h3>
+                <i class="fas fa-robot"></i>
+                <h3>Chatbot with Rule-Based Responses</h3>
+                <p>Crafted a dynamic chatbot with rule-based logic, mastering natural language processing basics and seamless conversation design.</p>
+        
+                <i class="fas fa-gamepad"></i>
+                <h3>Tic-Tac-Toe AI</h3>
+                <p>Built an invincible Tic-Tac-Toe AI with Minimax and Alpha-Beta Pruning, unlocking the power of game theory and search algorithms.</p>
+    
+                <i class="fas fa-thumbs-up"></i>
+                <h3>Recommendation System</h3>
+                <p>Created a smart recommendation engine using filtering techniques, delivering personalized suggestions that elevate user satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="animate">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="budget185_1.jpeg" alt="Expense Tracker">
+                <h3>Expense Tracker</h3>
+                <p>A web app for real-time expense tracking with dashboards and authentication.</p>
+            </div>
+            <div class="project-card">
+                <img src="download.jpeg" alt="Brain Tumor Detection">
+                <h3>Brain Tumor Detection</h3>
+                <p>CNN-based tool for detecting tumors in MRI scans using deep learning.</p>
+            </div>
+            <div class="project-card">
+                <img src="1720975493065.jpeg" alt="Outpass Generator Chatbot">
+                <h3>Outpass Generator Chatbot</h3>
+                <p>Automated chatbot for college outpass requests.</p>
+            </div>
+            <div class="project-card">
+                <img src="Rule-based-chatbots-vs-AI-powered-chatbots-1024x680.jpeg" alt="Rule-Based Chatbot">
+                <h3>Rule-Based Chatbot</h3>
+                <p>Simple chatbot that responds to user inputs using predefined rules by if-else statements.</p>
+            </div>
+            <div class="project-card">
+                <img src="Screenshot 2025-05-07 212303.png" alt="Tic Tac Toe">
+                <h3>Tic Tac Toe</h3>
+                <p>AI agent that plays the classic game against a human player.</p>
+            </div>
+            <div class="project-card">
+                <img src="applsci-10-05510-g001.jpeg" alt="Recommendation System">
+                <h3>Recommendation System</h3>
+                <p>Simple recommendation system that suggests items based on user preferences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="animate">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:athulya001am@example.com">athulya001am@example.com</a></p>
+            </div>
+            <div>
+                <i class="fab fa-linkedin"></i>
+                <p><a href="https://www.linkedin.com/in/athulya-m-4b518b282/" target="_blank">Athulya AM</a></p>
+            </div>
+            <div>
+                <i class="fab fa-github"></i>
+                <p><a href="https://github.com/Athulyaam" target="_blank">Athulyaam</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Athulya. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, .project-card, .quick-link-box').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('grow'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('grow'));
+        });
+
+        // Scroll Animations for Sections
+        gsap.utils.toArray('.animate').forEach(element => {
+            gsap.fromTo(element, 
+                { opacity: 0, y: 50 },
+                { 
+                    opacity: 1, 
+                    y: 0, 
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none reverse'
+                    }
+                }
+            );
+        });
+
+        // Skills Left-Slide Animation
+        gsap.utils.toArray('#skills li').forEach((skill, i) => {
+            gsap.from(skill, {
+                opacity: 0,
+                x: -50,
+                duration: 0.8,
+                delay: i * 0.2,
+                scrollTrigger: {
+                    trigger: skill,
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+
+        // Achievements Zigzag Animation
+        gsap.utils.toArray('.achievement-box').forEach((box, i) => {
+            gsap.fromTo(box, 
+                {
+                    opacity: 0,
+                    x: i % 2 === 0 ? -50 : 50
+                }, 
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 0.8,
+                    delay: i * 0.2,
+                    scrollTrigger: {
+                        trigger: box,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+        });
+
+        // Project Card Animations
+        gsap.utils.toArray('.project-card').forEach((card, i) => {
+            gsap.from(card, {
+                opacity: 0,
+                scale: 0.8,
+                rotation: i % 2 === 0 ? -5 : 5,
+                duration: 0.8,
+                delay: i * 0.2,
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+    </script>
+</body>
+</html>
